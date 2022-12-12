@@ -4,6 +4,7 @@
 
 <div>
   <%= link_to "Edit this shark", edit_shark_path(@shark) %> |
+  <%= link_to 'Edit this Posts', shark_posts_path(@shark) %> |
   <%= link_to "Back to sharks", sharks_path %>
 
   <%= button_to "Destroy this shark", @shark, method: :delete %>

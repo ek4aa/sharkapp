@@ -6,9 +6,10 @@
   <% @posts.each do |post| %>
     <%= render post %>
     <p>
-      <%= link_to "Show this post", post %>
+      <%= link_to "Show Post", [@shark, post] %>
     </p>
   <% end %>
 </div>
 
-<%= link_to "New post", new_post_path %>
+<%= link_to "New post", new_shark_post_path(@shark) %> | 
+<%= link_to "Back", [@shark] %>

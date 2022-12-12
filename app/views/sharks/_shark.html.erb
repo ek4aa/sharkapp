@@ -9,4 +9,10 @@
     <%= shark.facts %>
   </p>
 
+  <h2>Posts</h2>
+  <% for post in shark.posts %>
+      <ul>
+        <li><%= post.body %></li>
+    </ul>
+  <% end %>
 </div>
